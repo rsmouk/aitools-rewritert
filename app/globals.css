@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-cairo), system-ui, sans-serif;
+}
+
+.w-md-editor {
+  width: 100% !important;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+
+.wmde-markdown {
+  background: transparent !important;
+}
